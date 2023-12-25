@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1rem;
+}
+
+.Preloader{
+    background-color: #01579B;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.Preloader .loader {
+    border: 4px solid wheat;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-top-color: #003156;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+
+    }
+}
